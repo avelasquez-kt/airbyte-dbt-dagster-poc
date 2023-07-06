@@ -11,8 +11,9 @@ airflow/logs
 airflow/plugins
 
 airbyte/.octavia
-airbyte/*/**/state.yaml
+airbyte/*/**/state*.yaml
 airbyte/temporal/
 
 *.log
 
+venv/
