@@ -10,6 +10,7 @@ setup(
         "dagster-postgres",
         "dbt-core",
         "dbt-postgres",
+        "pandas",
         "psycopg2-binary"
     ],
     extras_require={"dev": ["dagit", "pytest"]},

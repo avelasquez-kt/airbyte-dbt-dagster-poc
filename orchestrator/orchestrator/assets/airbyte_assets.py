@@ -1,9 +1,9 @@
 from dagster import (
     AssetSelection,
     Definitions,
-    ScheduleDefinition,
-    define_asset_job,
-    with_resources
+    ScheduleDefinition
+    # define_asset_job,
+    # with_resources
 )
 
 from dagster_airbyte import (
@@ -20,6 +20,6 @@ airbyte_instance = AirbyteResource(
 
 airbyte_assets = load_assets_from_airbyte_instance(airbyte_instance)
 
-airbyte_job = define_asset_job(
-    "demo_job", AssetSelection.groups("demo_connection").downstream()
-)
+# airbyte_job = define_asset_job(
+#     "demo_job", AssetSelection.groups("demo_connection").upstream()
+# )
