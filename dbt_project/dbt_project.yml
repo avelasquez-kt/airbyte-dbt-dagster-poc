@@ -14,8 +14,8 @@ seed-paths:
   - data
 macro-paths:
   - macros
-target-path: ../build
-log-path: ../logs
+# target-path: ../build
+# log-path: ../logs
 packages-install-path: /dbt
 clean-targets:
   - build
