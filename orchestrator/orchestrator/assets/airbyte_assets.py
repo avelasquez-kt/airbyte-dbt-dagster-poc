@@ -1,4 +1,3 @@
-
 from dagster import (
     AssetSelection,
     Definitions,
@@ -23,9 +22,4 @@ airbyte_assets = load_assets_from_airbyte_instance(airbyte_instance)
 
 airbyte_job = define_asset_job(
     "demo_job", AssetSelection.groups("demo_connection").downstream()
-)
-
-defs = Definitions(
-    jobs=[airbyte_job],
-    assets=[airbyte_assets]
 )
