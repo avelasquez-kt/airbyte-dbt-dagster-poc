@@ -1,4 +1,4 @@
-# dagster
+# orchestrator
 
 This is a [Dagster](https://dagster.io/) project scaffolded with [`dagster project scaffold`](https://docs.dagster.io/getting-started/create-new-project).
 
@@ -18,7 +18,7 @@ dagster dev
 
 Open http://localhost:3000 with your browser to see the project.
 
-You can start writing assets in `dagster/assets.py`. The assets are automatically loaded into the Dagster code location as you define them.
+You can start writing assets in `orchestrator/assets.py`. The assets are automatically loaded into the Dagster code location as you define them.
 
 ## Development
 
@@ -29,10 +29,10 @@ You can specify new Python dependencies in `setup.py`.
 
 ### Unit testing
 
-Tests are in the `dagster_tests` directory and you can run tests using `pytest`:
+Tests are in the `orchestrator_tests` directory and you can run tests using `pytest`:
 
 ```bash
-pytest dagster_tests
+pytest orchestrator_tests
 ```
 
 ### Schedules and sensors
