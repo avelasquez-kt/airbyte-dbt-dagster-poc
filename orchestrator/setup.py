@@ -11,7 +11,8 @@ setup(
         "dbt-core",
         "dbt-postgres",
         "pandas",
-        "psycopg2-binary"
+        "psycopg2-binary",
+        "packaging<22.0"
     ],
     extras_require={"dev": ["dagit", "pytest"]},
 )

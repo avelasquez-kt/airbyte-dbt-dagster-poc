@@ -8,7 +8,11 @@ airbyte/*/**/state*.yaml
 airbyte/temporal/
 
 dbt_project/config/*.yml
-dbt_project/packages/dbt_utils
+dbt_project/logs/
+dbt_project/packages/dbt_utils/
+dbt_project/target/
+
+logs/
 
 *.log
 

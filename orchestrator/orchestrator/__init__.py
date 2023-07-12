@@ -1,6 +1,5 @@
 from dagster import (
     Definitions,
-    ScheduleDefinition,
     load_assets_from_package_module,
 )
 

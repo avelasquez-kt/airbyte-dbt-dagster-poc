@@ -1,0 +1,10 @@
+FROM python:3.11-slim
+
+ENV DAGSTER_HOME=/opt/dagster/dagster_home/
+
+RUN mkdir -p $DAGSTER_HOME
+
+COPY dagster.yaml workspace.yaml setup.py setup.cfg requirements_dagster.txt $DAGSTER_HOME
+RUN pip install -r $DAGSTER_HOME/requirements_dagster.txt
+
+WORKDIR $DAGSTER_HOME
